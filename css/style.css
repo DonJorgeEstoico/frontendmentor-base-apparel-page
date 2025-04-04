@@ -85,16 +85,16 @@ article {
 }
 
 #logo {
-    width: 15vw;
+    width: 15rem;
 }
 
-#hero-mobile {
+#hero-desktop {
     height: 100vh;
 }
 
 /*!-INPUT-!*/
 #input-area {
-    width: 24vw;
+    width: 25rem;
     align-items: center;
     border-color: hsla(0, 100%, 74%, 0.347);
     border-style: ridge;
@@ -159,4 +159,27 @@ button:hover {
 
 .visible {
     display: block;
+}
+
+/*------------------------------MEDIAS------------------------------*/
+@media (min-width: 1310px) {
+    #hero-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1310px) {
+    article {
+        text-align: center;
+    }
+
+    #hero-mobile {
+        display: block;
+        width: 100%;
+        margin-block: 3rem;
+    }
+
+    #hero-desktop {
+        display: none;
+    }
 }
